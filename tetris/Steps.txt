@@ -1,0 +1,57 @@
+    LIBRARY FOR games 
+        2D GAME PHASOR JAVASCRIPT LIBRARY
+        3D GAME BABYLON 
+        3 JS
+#Make Your html page....
+    Use canvas tag          //as it is used to draw  on web ... games are used in canvas
+    Link Your CSS & Script.
+#Style Css..
+#Moving to Script
+    Input SHAPES & COLORS In form of Array.
+    Defining  Rows & COLS in Canvas.
+    Linking Canvas to js.
+        Using CTX( sort of Drwaing pen ) to reprset canvas in (2d,3d,webGS).
+    Scaling CTX (Defining blocks  dimension)
+    Function (Generate RANDOM_Piece)    //  to view any changes use CONSOLe.log()..
+        with attributes (shape, color, x,y cordinate ) know as pieceObject
+        Declare its object..
+    Function (RENDER_PIECE)            // to show piece in the canvas
+        To COLOR our element
+            ctx.fillstyle =COLORS[pieceObject + color]
+            ctx.fillRect =(cordinate, lenght in 2d)
+    Function (Movedown)                // to move the  pieceObject down.  increase y cordinate.
+    Function (set Interval )           // to   move the piece down in Interval
+        Create a funct with pieceObject 
+        call RENDER_PIECE // Create obj here.
+    //--UNTIL THIS pIECE IS GENERATD --//
+    Function (Generate_Grid)
+        Create its Variable. // at top
+        Grid is an ARRAY
+    Function (Render_GRID)
+        To COLOR our element
+            ctx.fillstyle =fill the grid with color(it should be white)..
+            ctx.fillRect =(cordinate, lenght in 2d)
+        update its function call in move donw & call render RENDER_PIECE.
+            // You Will see Falling Effect
+    llinking the keyboard with Script
+        // with the help of document.eventlistener().
+        Take Input for all key with Variable key and for each each define its function.
+            Define Function ( key -DWON,UP,RIGHT,LEFT)
+    Check for COLLSOIN(as piecec will go out of canvas)
+    Function (COLLSOIN)
+        //Check collison of piecec with grid walls
+        write the funct of collison
+    Check collison for all KEYY Function..
+    Freez the piece at bottom
+        when at bottom fill the grid with piece color and make the object null
+    Check  collison between pieces in func collison
+    check if canvas is filled then Alert GAME OVER
+        //check with y cordinate in move down
+    ADD Functionlity OF ROTATE key..  ***DSA***
+        //check for collison of rotated func... 
+    Function( Check GRID) 
+        // chck if the last row of grid is filled then remove it & new row at top/
+    Take variable for score & udate it..
+        link the scoreboard to html page using document.queryselector..
+        when row filled up count it & update score accordingly.
+        Finally Update the score in html page using //innerHTML
